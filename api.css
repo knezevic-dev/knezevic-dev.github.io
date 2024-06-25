@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+button {
+    cursor: pointer;
+    margin-left: 0.5em;
+    border-radius: 1em;
+    background-color: rgb(235, 235, 82);
+    color: rgb(136, 18, 18);
+    font-weight: bold;
+    max-width: 100%;
+    padding: 0.5em;
+
+}
+body {
+    display: grid;
+    justify-content: center;
+    background-color: rgb(180, 180, 180);
+}
+#nameOfPokemon{
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+    padding: 1em;
+    background-color: rgb(166, 105, 223);
+    
+}
+::placeholder{
+    background-attachment: fixed;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+}

@@ -1,10 +1,8 @@
 async function fetchData(){
     const pokemonName = document.getElementById("nameOfPokemon").value.toLowerCase();
-    const fetchingAPI = [
-        fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`),
-        fetch(`https://pokeapi.co/api/v2/pokemon-species/${pokemonName}`),
+    const fetchingAPI = 
         fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`)
-    ];
+        //i needed just the one fetched API
     try{
         const responses = await Promise.all(fetchingAPI);
         if (!responses.every(response => response.ok)) {
